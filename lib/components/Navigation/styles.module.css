@@ -1,0 +1,31 @@
+.navigation {
+  background-color: #0e1e39;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+
+  ul {
+    color: white;
+    display: flex;
+    list-style-type: none;
+
+    li {
+      margin-right: 1rem;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      span {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}

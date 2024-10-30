@@ -1,7 +1,7 @@
 {
-  "name": "@benstoica/components-ben-test",
+  "name": "components-ben-test",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
@@ -18,14 +18,15 @@
     "preview": "vite preview",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2"
+  },
   "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "@eslint/js": "^9.13.0",
     "@types/node": "^22.8.2",
     "@types/react": "^18.3.11",
@@ -36,6 +37,8 @@
     "eslint-plugin-react-refresh": "^0.4.13",
     "glob": "^11.0.0",
     "globals": "^15.11.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.10.0",
     "vite": "^5.4.9",
