@@ -20,22 +20,60 @@ export function Navigation() {
           <li>
             <span>Orders</span>
             <FontAwesomeIcon icon={faChevronDown} />
+            <ul className={styles.submenu}>
+              <li>
+                <a href="#">Workspace</a>
+              </li>
+              <li>
+                <a href="#">Action Log</a>
+              </li>
+              <li>
+                <a href="#">Auto Build Log</a>
+              </li>
+            </ul>
           </li>
           <li>
             <span>Accounts</span>
             <FontAwesomeIcon icon={faChevronDown} />
-          </li>
-          <li>
-            <a href="#">Locations</a>
+            <ul className={styles.submenu}>
+              <li>
+                <a href="#">Carriers</a>
+              </li>
+              <li>
+                <a href="#">Customers</a>
+              </li>
+            </ul>
           </li>
           <li>
             <span>Utilities</span>
             <FontAwesomeIcon icon={faChevronDown} />
+            <ul className={styles.submenu}>
+              <li>
+                <a href="#">Users</a>
+              </li>
+              <li>
+                <a href="#">Map</a>
+              </li>
+              <li>
+                <a href="#">Routing Guide</a>
+              </li>
+              <li>
+                <a href="#">Coverage Plans</a>
+              </li>
+              <li>
+                <a href="#">Marketplace Carriers</a>
+              </li>
+            </ul>
           </li>
-          <div>
+          <li>
             <span>bstoica@rpmmoves.com</span>
             <FontAwesomeIcon icon={faChevronDown} />
-          </div>
+            <ul className={styles.submenu}>
+              <li>
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>

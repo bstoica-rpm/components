@@ -1,31 +1,63 @@
 .navigation {
   background-color: #0e1e39;
   width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 1rem;
   margin: 0 auto;
+  color: white;
 
   ul {
-    color: white;
     display: flex;
     list-style-type: none;
+    cursor: pointer;
+    width: 100%;
 
     li {
       margin-right: 1rem;
+      padding: 0 1rem;
+      position: relative;
 
       a {
         color: white;
         text-decoration: none;
       }
 
-      span {
-        margin-right: 0.25rem;
+      .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #0e1e39b3;
+        z-index: 1;
+        list-style-type: none;
+        padding: 0 15px;
+        margin-top: 2rem;
+        white-space: nowrap;
+        width: max-content;
+
+        li {
+          margin: 1.25rem 0;
+        }
       }
+
+      &:hover .submenu {
+        display: block;
+      }
+    }
+
+    span {
+      margin-right: 0.25rem;
+    }
+
+    li:last-child {
+      margin-left: auto;
     }
   }
 }
